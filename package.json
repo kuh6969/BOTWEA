@@ -1,8 +1,8 @@
 {
-  "name": "SELFBOT",
+  "name": "DIDINBOT",
   "version": "1.0.0",
   "description": "TOD",
-  "main": "main.js",
+  "main": "ro-bot.js",
   "directories": {
     "lib": "lib"
   },
@@ -53,7 +53,7 @@
     "yt-search": "^2.7.6"
   },
   "scripts": {
-    "start": "node main",
+    "start": "node ro-bot",
     "test": "supervisor main"
   },
   "repository": {
