@@ -116,29 +116,29 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Selamat malam";
     }
     if (time2 < "19:00:00") {
-      var ucapanWaktu = "Selamat senja🌞";
+      var ucapanWaktu = "Selamat senja";
     }
     if (time2 < "18:00:00") {
-      var ucapanWaktu = "Selamat sore🌄";
+      var ucapanWaktu = "Selamat sore";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Selamat siang☀️";
+      var ucapanWaktu = "Selamat siang";
     }
     if (time2 < "11:00:00") {
-      var ucapanWaktu = "Selamat pagi🌅";
+      var ucapanWaktu = "Selamat pagi";
     }
     if (time2 < "05:00:00") {
-      var ucapanWaktu = "Selamat malam🌃";
+      var ucapanWaktu = "Selamat malam";
     }
  
  // BATAS \\
 banChats = false;
 offline = false;
-antidel = false;
+antidel = true;
 antical = true
-readGc = true; 
+readGc = false; 
 readPc = false;
-autovn = true;
+autovn = false;
 multi = true
 harga = 0
 matauang = 'YEN'
@@ -157,7 +157,7 @@ lolkey = setting.lolkey
 xteamkey = setting.xteamkey
 zekskey = setting.zekskey
 dapapi = setting.dapapi
-nomorowner1 = "@6281545463585";
+nomorowner1 = "@12816245470";
 autongevn = setting.autongevn
 bentar = setting.bentar
 fake = setting.fake
@@ -366,7 +366,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await ronove.chats.all();
-    const ownerNumber = [`6281545463585@s.whatsapp.net`]
+    const ownerNumber = [`12816245470@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(ronove, mek);
     const groupMetadata = isGroup ? await ronove.groupMetadata(from) : "";
@@ -438,21 +438,6 @@ const isRegistered = checkRegisteredUser(sender)
         } else if (levelRole >= 100) {
             role = 'Immortal'
         }
-        //daftar button by Iky
-      const daftar1 = `Hai kak  ${pushname} ${ucapanWaktu} \n\nSebelum Menggunakan Bot Verify Terlebih Dahulu Ya `
-       const daftar2 = '```Ketik Tombol Di Bawah Untuk Verify Kak〆⁩```'
-       const daftar3 = [
-          {
-            buttonId: `verify`,
-            buttonText: {
-              displayText: `Daftar〆⁩`,
-            },
-            type: 1,
-          },]
-var hayuk0 = '[NOT VERIFIED]'
-			if (isRegistered) {
-			hayuk0 = '[√ VERIFIED]'
-			}
 			       // FUNCTION LEVELING
        if (isGroup && !mek.key.fromMe && !level.isGained(sender) && isLevelingOn) {
        try {
@@ -482,7 +467,6 @@ var hayuk0 = '[NOT VERIFIED]'
 			let Levelnye = level.getLevelingLevel(sender, _level)
               let Xpluu = level.getLevelingXp(sender, _level)
               let requiredXplu = 10 * Math.pow(Levelnye, 2) + 50 * Levelnye + 100
-			tc = `MAAF KA NOMER KAMU BLOM TERDAFTAR DI DATABASE SILAHKAN KETIK !verify UNTUK MENDAFTAR DI DIDINBOT☕`
 			ind = {
 				wait: `⌛ Sedang di Prosess ⌛`,
 				success: `✔️ Berhasil ✔️`,
@@ -657,7 +641,7 @@ cmhit.push(command)
           thumbnail: iye,
           surface: 200,
           message: iye,
-          orderTitle: "ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩.",
+          orderTitle: "© KUHXBOT⁩.",
           sellerJid: "0@s.whatsapp.net",
         },
       },
@@ -697,8 +681,8 @@ const ftri = {
                             itemCount : 999999999,
                             status: 1,
                             surface : 1,
-                            message: `DIDINBOT VERIFIED`, //Kasih namalu
-                            orderTitle: `DIDINBOT VERIFIED`,
+                            message: `KUHXBOT VERIFIED`, //Kasih namalu
+                            orderTitle: `KUHXBOT VERIFIED`,
                             thumbnail: iye, //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
                           }
@@ -1074,7 +1058,7 @@ if (!itsMe && !isOwner)return
             description: "SELF BOT",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩",
+            retailerId: "KUKUH⁩",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -1201,11 +1185,11 @@ ronove.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
       ronove.groupAdd(from, orangnya);
     };
     const nihkak = (teks) => {
-        	grup = ronove.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/FEddiGqX38kAxUaIl3zRtl', "groupName": `Nih kak`, "footerText": "*© ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+        	grup = ronove.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/FEddiGqX38kAxUaIl3zRtl', "groupName": `Nih kak`, "footerText": "*© © KUHXBOT⁩*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
             ronove.relayWAMessage(grup)
         }
         const grupinv = (teks) => {
-        	grup = ronove.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/FEddiGqX38kAxUaIl3zRtl', "groupName": `DIDINBOT`, "footerText": "*© ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+        	grup = ronove.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/FEddiGqX38kAxUaIl3zRtl', "groupName": `KUHXBOT`, "footerText": "*© © KUHXBOT⁩*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
             ronove.relayWAMessage(grup)
         }
 const fakeitem = (teks) => {
@@ -1215,16 +1199,16 @@ const fakeitem = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`© KUHXBOT⁩`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 const katalog = (teks) => {
-             res = ronove.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = ronove.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*© KUHXBOT⁩*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
              ronove.relayWAMessage(res)
         }
 const fakewa = (teks) => {        
-ronove.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/6281545463585?text=Assalamualaikum`}}})
+ronove.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jam} - ${week} ${weton} - ${date}`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://wa.me/12816245470?text=Assalamualaikum`}}})
 		}
 		const fakegrup = (teks) => {        
-ronove.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `DIDINBOT GROUP`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://chat.whatsapp.com/FEddiGqX38kAxUaIl3zRtl`}}})
+ronove.sendMessage(from, teks, text, { thumbnail: fake, sendEphemeral: true, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `KUHXBOT GROUP`,body:"",previewType:"PHOTO",thumbnail:iye,sourceUrl:`https://chat.whatsapp.com/HAdV9dfrqwMEr86ujbC26J`}}})
 		}
 const replyfakelink = (teks) => {
 ronove.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
@@ -1232,7 +1216,7 @@ ronove.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `DIDINBOT/n VERIFIED`,
+                "title": `KUHXBOT/n VERIFIED`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://a.top4top.io/p_2073icief0.jpg",
@@ -1247,12 +1231,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `Whatsapp`,
-                "body": `wa.me/6281545463585`,
+                "body": `wa.me/12816245470`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/6281545463585`,
+                "mediaUrl": `wa.me/12816245470`,
                 "thumbnailUrl": "https://j.top4top.io/p_20682m4yj0.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/6281545463585`,
+                "sourceUrl": `wa.me/12816245470`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -1425,7 +1409,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         let vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`));
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`));
         let fil = vote.map((v) => v.participant);
-        let id_vote = sender ? sender : "6281545463585@s.whatsapp.net";
+        let id_vote = sender ? sender : "12816245470@s.whatsapp.net";
         if (fil.includes(id_vote)) {
           return mentions(
             "@" + sender.split("@")[0] + " Anda sudah vote",
@@ -1457,7 +1441,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         const vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`));
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`));
         let fil = vote.map((v) => v.participant);
-        let id_vote = sender ? sender : "6281545463585@s.whatsapp.net";
+        let id_vote = sender ? sender : "12816245470@s.whatsapp.net";
         if (fil.includes(id_vote)) {
           return mentions(
             "@" + sender.split("@")[0] + " Anda sudah vote",
@@ -1582,9 +1566,9 @@ await ronove.setStatus(`Aktif selama ${uptime}`).catch((_) => _);
 switch (command) {
 case 'help':
 case 'menu':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         thu = await ronove.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
-ptod = "6281545463585@s.whatsapp.net"
+ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
@@ -1593,21 +1577,21 @@ ptod = "6281545463585@s.whatsapp.net"
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `🌹𝐇𝐄𝐋𝐋𝐎𝐖𝐎𝐑𝐋𝐃🌹
+       menu = `🌹${ucapanWaktu} @${sender.split('@')[0]}🌹
 〆⁩ Jam : ${jam}
 〆⁩ Hari : ${week} ${weton}
 〆⁩ Tanggal : ${date}
 
-「 𝙄𝙉𝙁𝙊 𝙆𝘼𝙈𝙐 」
 
+「 𝙄𝙉𝙁𝙊 𝙆𝘼𝙈𝙐 」
 〆⁩ *Username:* ${pushname}
 〆⁩ *Bio Info:* ${thu.status}
 〆⁩ *Admin*: ${isGroupAdmins ? 'Ya' : 'No'}
 〆⁩ *Level*: ${Levelnye}
 〆⁩ *XP*: ${Xpluu} / ${requiredXplu}
 
-「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」
 
+「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」
 〆⁩ Prefix : ${prefixStatus ? "Multi Prefix" : "No Prefix"}
 〆⁩ Runtime : ${runtime(process.uptime())}
 〆⁩ Hit Today : ${hit_today.length} Hit
@@ -1615,61 +1599,17 @@ ptod = "6281545463585@s.whatsapp.net"
 〆⁩Total Chat : ${totalchat.length} Chat 
 〆⁩ 𝐒𝐩𝐞𝐞𝐝 : *${latensie.toFixed(4)} _Second_*
 〆⁩ 𝐀𝐜𝐭𝐢𝐯𝐞 : *${runtime(process.uptime())}*
-〆⁩ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : *Ubuntu Linux*
-${readmore}
-
-*[ ᴍʏ ʀᴇsᴛ ᴀᴘɪ ]*
-〆⁩ : https://api.blackhunterhostlive.com
-
-* [ ɪɴsᴛᴀɢʀᴀᴍ ]*
-〆⁩ : https://instagram.com/didin_yt1
-
-*[ ʟɪsᴛ ᴍᴇɴᴜ ]*
-〆⁩ ᴀʟʟ ᴍᴇɴᴜ
-〆⁩ ɢʀᴏᴜᴘ ᴍᴇɴᴜ
-〆⁩ ᴡɪʙᴜ ᴍᴇɴᴜ
-〆⁩ sᴛɪᴄᴋᴇʀ ᴍᴇɴᴜ
-〆⁩ ᴏᴡɴᴇʀ ᴍᴇɴᴜ
-〆⁩ ɢᴀᴍᴇ ᴍᴇɴᴜ
-〆⁩ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ
-〆⁩ sᴛᴀᴛᴜs
-〆⁩ ɴsғᴡ ᴍᴇɴᴜ
-〆⁩ ᴀsᴜᴘᴀɴ ᴍᴇɴᴜ
-〆⁩ ᴏᴛʜᴇʀ ᴍᴇɴᴜ
-〆⁩ ᴜᴘsᴡ ᴍᴇɴᴜ
-〆⁩ ʟɪsᴛ ʜᴏsᴛɪɴɢ
-〆⁩ sᴘᴇᴇᴅ
-〆⁩ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ
-〆⁩ ʀᴜɴᴛɪᴍᴇ
-〆⁩ sᴇᴡᴀ ʙᴏᴛ
-〆⁩ ᴄʀᴇᴀᴛᴏʀ
-
-[ ᴅɪᴅɪɴʙᴏᴛ ]
-
-*┃┃✙◗ _⁩✨ᴛʜᴀɴᴋ ᴛᴏ_*
-*┃┗━━━━━━━━*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ᴀʟʟᴀʜ*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ᴅɪᴅɪɴ [ sᴀʏᴀ ]*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ʀᴏɴᴏᴠᴇ*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ᴠᴀɴʏ*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ᴛᴀǫɪ*
-*┃• ᴛʜᴀɴᴋ ᴛᴏ ᴀʟʟ ᴄʀᴇᴀᴛᴏʀ*
-*┗━━━━━━━ •*
-
-Hai Kak ${pushname}\nᴊᴀɴɢᴀɴ ʟᴜᴘᴀ sᴜʙsᴄʀɪʙᴇ ᴅɪᴅɪɴ ʏᴛ`
-sendButLocation(from, `${menu}`, `*ɴᴏᴛᴇ :*
-• ɴᴏ ᴄᴀʟʟ ʙᴏᴛ & ᴏᴡɴᴇʀ ᴋᴀʀɴᴀ ᴀᴋᴀɴ ᴅɪ ʙʟᴏᴄᴋ ᴘᴇʀᴍᴀɴᴇɴᴛ !
-• ʙᴏᴛ ᴍᴀsɪʜ ᴅᴀʟᴀᴍ ᴛᴀʜᴀᴘ ᴘᴇʀᴋᴇᴍʙᴀɴɢᴀɴ ᴊᴀᴅɪ ᴊɪᴋᴀ ᴀᴅᴀ ʙᴜɢ ᴀᴛᴀᴜ ʀᴇǫᴜᴇsᴛ ғɪᴛᴜʀ ʙɪsᴀ ʟᴀᴘᴏʀ ᴋᴇ ᴏᴡɴᴇʀ !
-• ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʙᴏᴛ !`, {jpegThumbnail:iye}, [{buttonId:`infobot`,buttonText:{displayText:'INFO BOT〆⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'Owner〆⁩'},type:1},{buttonId:`command`,buttonText:{displayText:'>_'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}}, { quoted : mek })
+〆⁩ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : *Ubuntu Linux*`
+sendButLocation(from, `${menu}`, `GUNAKAN BOT DENGAN BIJAK`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'ALL MENU⁩'},type:1},{buttonId:`topup`,buttonText:{displayText:'TOPUP GAME⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}}, { quoted : mek })
                buffer = fs.readFileSync(`./stik/ara.mp3`)
 ronove.sendMessage(from, buffer, audio, { mimetype: 'audio/mp4', quoted: fg3, ptt: true })
         break
-case 'ᴀʟʟᴍᴇɴᴜ': 
-ptod = "6281545463585@s.whatsapp.net"
+case 'allmenu': 
+ptod = "12816245470@s.whatsapp.net"
 stod = `${sender}`
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-       nama = 'ᴀʟʟᴍᴇɴᴜ'
-       ownerJid = "6281545463585@s.whatsapp.net"
+       nama = 'allmenu'
+       ownerJid = "12816245470@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
 menunya = `ッ『 ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 』ッ
@@ -1746,23 +1686,6 @@ menunya = `ッ『 ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ 』ッ
 *〆⁩*${prefix}swm
 *〆⁩*${prefix}take
 *〆⁩*${prefix}sgif  
-
-ッ『 ʟɪsᴛʜᴏsᴛɪɴɢ 』ッ
-*〆⁩*${prefix}ᴡᴇʙᴘ
-*〆⁩*${prefix}ᴡʜᴍ
-*〆⁩*${prefix}sᴍᴛᴘ
-*〆⁩*${prefix}ᴍᴡʜᴍ
-*〆⁩*${prefix}ᴠᴘs
-
-ッ『 ᴅɪᴀᴍᴏɴᴅғғ 』ッ
-*〆⁩*${prefix}5ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}12ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}50ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}70ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}140ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}355ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}720ᴅɪᴀᴍᴏɴᴅ
-*〆⁩*${prefix}1450ᴅɪᴀᴍᴏɴᴅ
                                                             
 ッ『 ᴏᴡɴᴇʀ ᴍᴇɴᴜ 』ッ
 *〆⁩*${prefix}off
@@ -1958,7 +1881,7 @@ var _0xcdc6be = _0x4cac;
             'description': '' + menunya,
             'productImageCount': 1
         },
-        'businessOwnerJid': "6281545463585@s.whatsapp.net",
+        'businessOwnerJid': "12816245470@s.whatsapp.net",
         'contextInfo': {
             'forwardingScore': 558,
             'isForwarded': !![]
@@ -2053,9 +1976,7 @@ case 'apakah':
 case 'tagall':
               if (!isGroup) return reply(mess.only.group)
               let arr = [];
-              let txti = `*╔═══❖•ೋ° °ೋ•❖═══╗*
-                      ʙᴇʙᴀɴ ɢʀᴜᴘ
-*╚═══❖•ೋ° °ೋ•❖═══╝*${q ? q : ''}\n`
+              let txti = `*「 BEBAN GRUP 」*${q ? q : ''}\n`
               for (let i of groupMembers){
               txti += `↦ @${i.jid.split("@")[0]}\n`
               arr.push(i.jid)
@@ -2081,7 +2002,6 @@ case 'tagall':
               break
 case 'helpu':
        thu = await ronove.getStatus(`${sender.split('@')[0]}@s.whatsapp.net`, MessageType.text)
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: freply})
        groups = ronove.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = ronove.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -2094,7 +2014,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
               
        menu =`🌹𝐇𝐄𝐋𝐋𝐎𝐖𝐎𝐑𝐋𝐃🌹
 
-DIDINBOT☕
+KUHXBOT☕
 ${ucapanWaktu} Kak ${pushname} 👋
   
 「 𝑪𝑨𝑳𝑬𝑵𝑫𝑨𝑹 」
@@ -2139,7 +2059,7 @@ ${ucapanWaktu} Kak ${pushname} 👋
 🔖 𝐈𝐦𝐚𝐠𝐞𝐦𝐚𝐧𝐢
 🔖 𝐍𝐬𝐟𝐰𝐚𝐧𝐢𝐦𝐞
 
-「 DIDINBOT☕」
+「 KUHXBOT☕」
 
  𝔍𝔞𝔫𝔤𝔞𝔫 𝔭𝔢𝔯𝔫𝔞𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔰𝔢𝔰𝔢𝔬𝔯𝔞𝔫𝔤 
   𝔶𝔞𝔫𝔤 𝔪𝔞𝔰𝔦𝔥 𝔪𝔢𝔫𝔠𝔦𝔫𝔱𝔞𝔦 𝔪𝔞𝔰𝔞𝔩𝔞𝔩𝔲𝔫𝔶𝔞
@@ -2148,7 +2068,7 @@ ${ucapanWaktu} Kak ${pushname} 👋
               
                 
 
-                    ronove.sendMessage(from, { contentText: `${menu}`, footerText: 'DIDINBOT☕', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'MENU〆⁩' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '🏷️ SEWA BOT' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: iye, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+                    ronove.sendMessage(from, { contentText: `${menu}`, footerText: 'KUHXBOT☕', buttons: [{ buttonId: `!command`, buttonText: { displayText: 'MENU〆⁩' }, type: 1 },{ buttonId: `!sewabot`, buttonText: { displayText: '🏷️ SEWA BOT' }, type: 1 },{ buttonId: `!owner`, buttonText: { displayText: '👥 OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: iye, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
               break
        case 'hobby':
              const kan =['Coli','baca buku','Tadi','ngeliat org mandi','Nonton bokep','sepedaan','Baca wattpad','belajar','Main discord','menabung']
@@ -2223,8 +2143,8 @@ ronove.updatePresence(from, Presence.composing)
 
 break      
         case 'shareloc':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
@@ -2235,8 +2155,8 @@ break
 sendButLocation(from, `${tes}`, `${yoii}Kapan kapan maen kerumah kak${yoii}`, {jpegThumbnail:serlok}, [{buttonId:`ok`,buttonText:{displayText:'Ok Kak'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
         case 'infobot':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
@@ -2260,13 +2180,14 @@ ${readmore}
 *┃┃✨Thank to*
 *┃┗━━━━━━━━*
 *┃• thank to Allah*
-*┃• thank to DIDIN [ SAYA ]*
+*┃• thank to Kukuh*
+*┃• thank to DIDIN*
 *┃• thank to Ronove*
 *┃• thank to Vany*
 *┃• thank to taqi*
 *┃• thank to All Creator bot*
 *┗━━━━━━━ •*`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`laporan`,buttonText:{displayText:'ʀᴇᴘᴏʀᴛ ᴇʀᴏʀ🛠'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`script`,buttonText:{displayText:'sᴄʀɪᴘᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`laporan`,buttonText:{displayText:'ʀᴇᴘᴏʀᴛ ᴇʀᴏʀ🛠'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`script`,buttonText:{displayText:'sᴄʀɪᴘᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
 case 'auu': // by ronove
        reply('apa?0')
@@ -2307,12 +2228,12 @@ break
 case 'isbaileys': 
 case 'bail': 
 case 'baileys':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!mek.key.fromMe) return;
 reply(`${mek.quoted.isBaileys}`)
 break
 case 'getcaption':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!mek.key.fromMe) return;
 try {
 reply(`${mek.quoted.title}`)
@@ -2321,7 +2242,7 @@ reply(`${mek.quoted.caption}`)
 }
 break
 case 'laporan': //KIRIGIRI
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
        reply('*HALO  KACK ADA MASALAH APA DENGAN BOT NYA KAK SI LAHKAN CHAT OWNER/DEVELOPER BOT*')
         sendButMessage(from, `Hai Kak ${pushname} 〆⁩`, `Kalo Nemu Bug Sung Kasih Tau Owner Atau Creator Bot Ini〆⁩`, [
           {
@@ -2341,20 +2262,20 @@ case 'laporan': //KIRIGIRI
         ]);
         break
 case 'iggw':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
   reply('https://instagram.com/didin_yt1')
 break
         		        case 'darkneon':
 			case 'woodblock':
 			case 'paper':
-			       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+			  
 			if (args.length < 1) return reply(`Contoh: ${prefix}paper ronove`)
 			papg = body.slice(6)
 			glass = await getBuffer(`https://videfikri.com/api/textmaker/${command}/?text=${papg}`)
 			ronove.sendMessage(from, glass, image, {quoted: ftrol, caption: 'INI'})
 			break
     case 'tinyurl':
-           if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+      
          sticWait(from)
                     if (args.length == 0) return reply(`Format salah! dibutuhkan (${prefix + command} (url with http://)) Example: ${prefix + command} http://panel.vinny.wtf/`)
                     short = args.join(" ")
@@ -2366,7 +2287,7 @@ break
      reply (ini_txt)
      break          
          case 'bitly':
-                if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+            
          sticWait(from)
                     if (args.length == 0) return reply(`Format salah! dibutuhkan (${prefix + command} (url with http://)) Example: ${prefix + command} http://panel.vinny.wtf/`)
                     short = args.join(" ")
@@ -2378,7 +2299,7 @@ break
      reply (ini_txt)
      break          
                  case 'shorturl':
-                        if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+                    
          sticWait(from)
                     if (args.length == 0) return reply(`Format salah! dibutuhkan (${prefix + command} (url with http://)) Example: ${prefix + command} http://panel.vinny.wtf/`)
                     short = args.join(" ")
@@ -2390,7 +2311,7 @@ break
      reply (ini_txt)
      break
         case 'cuttly':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
          sticWait(from)
                     if (args.length == 0) return reply(`Format salah! dibutuhkan (${prefix + command} (url with http://)) Example: ${prefix + command} http://panel.vinny.wtf/`)
                     short = args.join(" ")
@@ -2402,7 +2323,7 @@ break
      reply (ini_txt)
      break 
                 case 'artinama':
-                       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+                  
          sticWait(from)
                     if (args.length == 0) return reply(`Format salah! dibutuhkan (${prefix + command} (nama) Example: ${prefix + command} Raisya`)
                     nama = args.join(" ")
@@ -2421,17 +2342,17 @@ break
 					case 'underwaterocean':
 					case 'wolfmetal':
 					case 'rainbowshine':
-					       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+					  
                     sticWait(from)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} DIDINBOT`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} KUHXBOT`)
                     teki = args.join(" ")
                     repur = await getBuffer(`https://api.xteam.xyz/photooxy/${command}?text=${teki}&APIKEY=${xteamkey}`)
                     ronove.sendMessage(from, repur, image, { quoted: fgif})
                     break
         					case 'pornhub':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
         sticWait(from)
-					 if (args.length == 0) return reply(`Example: ${prefix + command} DIDINBOT|baik`)
+					 if (args.length == 0) return reply(`Example: ${prefix + command} KUHXBOT|baik`)
                     query = args.join(" ")
 					porn = `${body.slice(8)}`
 					hub1 = porn.split("|")[0];
@@ -2440,7 +2361,7 @@ break
 					ronove.sendMessage(from, porn, image, {caption: 'PORNHUB', quoted: fgif})
 					break 
         case 'joox':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
                     if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
                     jooxbyManik = await fetchJson(`https://api.zeks.me/api/joox?apikey=${zekskey}&q=${query}`)
@@ -2452,7 +2373,7 @@ break
                     ronove.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${jooxbyManik.songname}.mp3`, quoted: mek})
                     break
         case 'infocovid':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
      ini_result = await fetchJson('https://api-alphabot.herokuapp.com/api/covidworld?apikey=Alphabot')
      get_result = ini_result.result
         ini_txt = `C O V I D  W O R L D
@@ -2467,7 +2388,7 @@ break
      break
 case 'owner':
            case 'creator':
-                  if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+              
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'jgn Lupa donasi ya😃')
                await sleep(1000)
                haibg =`Hai Kak ${pushname}\nItu Ownerku, Mau tau soal apa ya?`
@@ -2493,7 +2414,7 @@ case 'ass':
         case 'bdsm':
         case 'ero':
         case 'glasses':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
 sticWait(from)
      ini_result = await fetchJson(`https://ronove-bot-api.herokuapp.com/api/nsfw/${command}?apikey=Alphabot`)
 
@@ -2506,13 +2427,13 @@ sticWait(from)
      break
 case 'bts':
 case 'exo':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
 sticWait(from)
         ini_img = await getBuffer(`https://api.xteam.xyz/randomimage/${command}?APIKEY=${xteamkey}`)
      ronove.sendMessage(from, ini_img, image, {quoted:nikak})
      break
                 case 'nhengif':
-                       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+                  
                     sticWait(from)
      ini_result = await fetchJson(`https://ronove-bot-api.herokuapp.com/api/nsfw/hentaigif?apikey=Alphabot`)
 
@@ -2524,18 +2445,18 @@ sticWait(from)
 
      break
 case 'mengyoi':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!mek.key.fromMe) return;
 sendBug(from)
 break
 case 'buggc':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!mek.key.fromMe) return;
 if (!q) return reply('Masukan ID Grupnya')
 sendBug(args[0])
 break
 case 'okvirtex':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 katalog(`${ngazap(prefix)}`)
 katalog(`${emoji2(prefix)}`)
@@ -2600,7 +2521,7 @@ case 'vietnam':
         case 'malaysia':
         case 'japan':
         case 'thailand':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
 sticWait(from)
      ini_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/cewe/${command}?apikey=Alphabot`)
 
@@ -2645,7 +2566,7 @@ ronove.toggleDisappearingMessages(from, 0)
 			ronove.sendMessage(from, damdu, sticker, {quoted: mek})
 			break
  case 'owner3':
-        if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+    
 let ini_list = []
 for (let i of nomorowner1) {
 const vname = ronove.contacts[i] != undefined ? ronove.contacts[i].vname || ronove.contacts[i].notify : undefined
@@ -2661,89 +2582,63 @@ hehe = await ronove.sendMessage(from, {
 ronove.sendMessage(from,'Ini Kontak Owner Ku',text,{quoted: mek})
 break
 case 'command':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
  listMsg = {
- buttonText: '*SUBREK DIDIN YT😁👍*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
+ buttonText: 'KLIK DISINI',
+ footerText: '© KUHXBOT',
  description: `Hai kak @${sender.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
                       "title": `${jam} - ${week} ${weton} - ${date}`,
  rows: [
                           {
-                              "title": "ᴀʟʟᴍᴇɴᴜ",
+                              "title": "allmenu",
                               "rowId": ""
                            },
                           {
                           
-                              "title": "ᴄʀᴇᴀᴛᴏʀ",
+                              "title": "downloadmenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ᴊᴀᴅɪʙᴏᴛ",
+                              "title": "stickermenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ʀᴜɴᴛɪᴍᴇ",
+                              "title": "makermenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ᴏᴡɴᴇʀᴍᴇɴᴜ",
+                              "title": "gamemenu",
                               "rowId": ""
                            },
                            {
-                              "title": "sᴛɪᴄᴋᴇʀᴍᴇɴᴜ",
+                              "title": "wibumenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ᴍᴀᴋᴇʀᴍᴇɴᴜ",
+                              "title": "nsfwmenu",
                               "rowId": ""
                            },
                            {
                            
-                              "title": "ɢᴀᴍᴇᴍᴇɴᴜ",
+                              "title": "groupmenu",
                               "rowId": ""
                            },
                            {
-                           "title": "ᴡɪʙᴜᴍᴇɴᴜ",
+                           "title": "othersmenu",
                            "rowId": ""
                            },
                            {
-                              "title": "ɴsғᴡᴍᴇɴᴜ",
+                              "title": "upswmenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ɢʀᴏᴜᴘᴍᴇɴᴜ",
+                              "title": "ownermenu",
                               "rowId": ""
                            },
                            {
-                              "title": "ᴏᴛʜᴇʀᴍᴇɴᴜ",
-                              "rowId": ""
-                           },
-                           {
-                           
-                              "title": "ᴅɪᴅɪɴsᴛᴏʀᴇ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ",
-                              "rowId": "d"
-                           },
-                           {
-                              "title": "ᴜᴘsᴡᴍᴇɴᴜ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "ɢᴄʙᴏᴛ",
-                              "rowId": ""
-                           },
-                           {
-                           
-                              "title": "sᴇᴡᴀʙᴏᴛ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "ʙᴇʟɪsᴄʙᴏᴛ",
+                              "title": "topupmenu",
                               "rowId": ""
                            }
                         ]
@@ -2752,16 +2647,16 @@ case 'command':
 }
 ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
 break
-case 'ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'downloadmenu':                                                              
 menu = `ッ『 Downloader Menu 』ッ
 *〆⁩*${prefix}ytmp4
 *〆⁩*${prefix}ytmp3
 *〆⁩*${prefix}play query
 *〆⁩*${prefix}instagram <url>
 *〆⁩*${prefix}twitter <url>`
-buttons = [{buttonId:`${prefix}rules`,buttonText:{displayText:'🎧 ᴄᴍᴅ ᴅᴇ ᴠᴏᴢ'},type:1}]
+fakeyt(menu)
 break
-case 'ᴡɪʙᴜᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'wibumenu':                                                              
 menu = `ッ『 Wibu Menu 』ッ
 
 *〆⁩*${prefix}kurumi
@@ -2781,7 +2676,7 @@ menu = `ッ『 Wibu Menu 』ッ
 *〆⁩*${prefix}gojosatoru`
 fakegroup(menu)
 break
-case 'ɴsғᴡᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'nsfwmenu':                                                              
 menu = `ッ『 Nsfw Menu 』ッ
 ℒ⃝‼️aktifkan fitur ini dengan ${prefix}nfsw 1
 *〆⁩*${prefix}yuri
@@ -2821,7 +2716,7 @@ menu = `ッ『 Nsfw Menu 』ッ
 *〆⁩*${prefix}glasses`
 fakeyt(menu)
 break
-case 'ɢʀᴏᴜᴘᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'groupmenu':                                                              
 menu = `ッ『 Grup Menu 』ッ
 *〆⁩*${prefix}grup [3 Button]
 *〆⁩*${prefix}promote <reply chat member>
@@ -2846,7 +2741,7 @@ menu = `ッ『 Grup Menu 』ッ
 *〆⁩*${prefix}kickarea`
 katalog(menu)
 break
-case 'sᴛɪᴋᴇʀᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'stickermenu':                                                              
 menu = `ッ『 Stiker Menu 』ッ
 *〆⁩*${prefix}toimg
 *〆⁩*${prefix}stiker
@@ -2855,7 +2750,7 @@ menu = `ッ『 Stiker Menu 』ッ
 *〆⁩*${prefix}sgif`
 fakeyt(menu)
 break
-case 'ᴏᴡɴᴇʀᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'ownermenu':                                                              
 menu = `ッ『 Owner Menu 』ッ
 *〆⁩*${prefix}off
 *〆⁩*${prefix}isbaileys
@@ -2885,7 +2780,7 @@ menu = `ッ『 Owner Menu 』ッ
 *〆⁩*${prefix}colongsw [reply sw]`
 fakeyt(menu)
 break
-case 'ᴜᴘsᴡᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'upswmenu':                                                              
 menu = `ッ『 Upsw Menu 』ッ
 *〆⁩*${prefix}upswteks teks
 *〆⁩*${prefix}upswvideo
@@ -2895,7 +2790,7 @@ menu = `ッ『 Upsw Menu 』ッ
 *〆⁩*${prefix}upswlokasi`
 katalog(menu)
 break
-case 'ᴏᴛʜᴇʀᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'othersmenu':                                                              
 menu = `ッ『 Other Menu 』ッ
 *〆⁩*${prefix}ping
 *〆⁩*${prefix}inspect
@@ -2941,7 +2836,7 @@ menu = `ッ『 Other Menu 』ッ
 *〆⁩*${prefix}otaku <query>`
 fakeyt(menu)
 break
-case 'ᴍᴀᴋᴇʀᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'makermenu':                                                              
 menu = `ッ『 Maker Menu 』ッ
 *〆⁩*${prefix}sticker
 *〆⁩*${prefix}swm <author|packname>
@@ -2979,7 +2874,7 @@ menu = `ッ『 Maker Menu 』ッ
 *〆⁩*${prefix}warrior teks`
 katalog(menu)
 break
-case 'ɢᴀᴍᴇᴍᴇɴᴜ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case 'gamemenu':                                                              
 menu = `ッ『 Game Menu 』ッ
 *〆⁩*${prefix}tembak udara
 *〆⁩*${prefix}tembak darat
@@ -2992,33 +2887,28 @@ menu = `ッ『 Game Menu 』ッ
 *〆⁩*${prefix}dare`
 fakeyt(menu)
 break
-case 'ɢᴄʙᴏᴛ':                                                                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-menu = `ッ『 Gc Bot 』ッ
-GABUNG UTK DPT INFO² MENGENAI DIDINBOT YA KAK`
-fakegrup(menu)
-break
         case 'command':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
  listMsg = {
- buttonText: '*SUBREK DIDIN YT😁👍*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
+ buttonText: 'KLIK DISINI',
+ footerText: '© KUHXBOT',
  description: `Hai kak @${sender.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
                       "title": `${jam} - ${week} ${weton} - ${date}`,
  rows: [
                           {
-                              "title": "ᴀʟʟᴍᴇɴᴜ",
+                              "title": "allmenu",
                               "rowId": ""
                            },
                           {
                           
                               
-                              "title": "sᴇᴡᴀʙᴏᴛ",
+                              "title": "topup",
                               "rowId": ""
                            },
                            {
-                              "title": "ʙᴇʟɪsᴄʙᴏᴛ",
+                              "title": "infobot",
                               "rowId": ""
                            }
                         ]
@@ -3027,51 +2917,23 @@ break
 }
 ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
 break
-        case 'ʙᴇʟɪsᴄʙᴏᴛ':
-        if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        sendButMessage(from, `ッ『 Sc Bot 』ッ
-Sc tanpa upgrade sc=10k
-Sc plus upgrade sc selamanya=15k
-`, `PEMBAYARAN CHAT OWNER KU YA`, [
-          {
-            buttonId: `owner`,
-            buttonText: {
-              displayText: `OWNER〆⁩`,
-            },
-            type: 1,
-          },
-]);
-        break
-        case 'ᴅɪᴅɪɴsᴛᴏʀᴇ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        case 'topup':
+  
  listMsg = {
- buttonText: '*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴅɪᴅɪɴsᴛᴏʀᴇ〆⁩*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, Silahkan pilih menu disini`,
+ buttonText: 'PILIH GAME',
+ footerText: '© KUHXBOT',
+ description: `Hai kak @${sender.split('@')[0]}, Silahkan pilih kategori game disini`,
  sections: [
                      {
                       "title": `${jam} - ${week} ${weton} - ${date}`,
  rows: [
                           {
-                              "title": "ᴅɪᴀᴍᴏɴᴅғғ",
+                              "title": "diamondff",
                               "rowId": ""
                            },
                           {
                           
-                              "title": "ᴅɪᴀᴍᴏɴᴅᴍʟ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "ᴄᴏᴅ",
-                              "rowId": ""
-                           },
-                           {
-                           
-                              "title": "ᴅᴏᴍɪɴᴏ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "ʟɪsᴛʜᴏsᴛɪɴɢ",
+                              "title": "diamondml",
                               "rowId": ""
                            }
                         ]
@@ -3080,36 +2942,32 @@ Sc plus upgrade sc selamanya=15k
 }
 ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
 break
-        case 'ʟɪsᴛʜᴏsᴛɪɴɢ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+       case 'diamondml':
+  
  listMsg = {
- buttonText: '*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴅɪᴅɪɴsᴛᴏʀᴇ〆⁩*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, ʟɪsᴛ ʜᴏsᴛɪɴɢ ᴅɪsɪɴɪ`,
+ buttonText: 'PILIH NOMINAL',
+ footerText: '© KUHXBOT',
+ description: `Hai kak @${sender.split('@')[0]}, List Diamond *MOBILE LEGENDS* Disini`,
  sections: [
                      {
                       "title": `${jam} - ${week} ${weton} - ${date}`,
  rows: [
                           {
-                              "title": "ᴡᴇʙᴘɪsʜɪɴɢ",
+                              "title": "86dm",
                               "rowId": ""
                            },
                           {
                           
-                              "title": "ᴡʜᴍ",
+                              "title": "172dm",
                               "rowId": ""
                            },
                            {
-                              "title": "ᴍᴡʜᴍ",
+                              "title": "257dm",
                               "rowId": ""
                            },
                            {
                            
-                              "title": "ᴠᴘs",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "sᴍᴛᴘ",
+                              "title": "344dm",
                               "rowId": ""
                            }
                         ]
@@ -3118,83 +2976,99 @@ break
 }
 ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
 break
-        case 'ᴡᴇʙᴘɪsʜɪɴɢ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-*ʟɪsᴛ ᴡᴇʙ ᴘɪsʜɪɴɢ〆⁩*
-0 ɢᴀʀᴀɴsɪ : 10.000
-1x ɢᴀʀᴀɴsɪ : 15.000
-2x ɢᴀʀᴀɴsɪ : 20.000
-3x ɢᴀʀᴀɴsɪ : 25.000
-4x ɢᴀʀᴀɴsɪ : 30.000
+case '86dm':
+          
+  ptod = "12816245470@s.whatsapp.net"
+  stod = `${sender}`
+  uwu = '*``*'
+  yoii = '```'
+ stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
+  stst = stst.status == 401 ? '' : stst.status
+num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+ menu = `ramadhankukuh.shop
 
-[ ᴘᴀʏᴍᴇɴᴛ ]
-ᴅᴀɴᴀ
-ɢᴏᴘᴀʏ
-ᴘᴜʟsᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`ᴘᴀʏᴍᴇɴ`,buttonText:{displayText:'ᴘᴀʏᴍᴇɴᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+Item : 86 Diamond
+Harga : 18.900
+order : wa.me/12816245470`
+
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
-       case 'ᴅɪᴀᴍᴏɴᴅᴍʟ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+case '172dm':
+          
+  ptod = "12816245470@s.whatsapp.net"
+  stod = `${sender}`
+  uwu = '*``*'
+  yoii = '```'
+ stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
+  stst = stst.status == 401 ? '' : stst.status
+num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+ menu = `ramadhankukuh.shop
+
+Item : 172 Diamond
+Harga : 37.800
+order : wa.me/12816245470`
+
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+break
+case '257dm':
+          
+  ptod = "12816245470@s.whatsapp.net"
+  stod = `${sender}`
+  uwu = '*``*'
+  yoii = '```'
+ stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
+  stst = stst.status == 401 ? '' : stst.status
+num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+ menu = `ramadhankukuh.shop
+
+Item : 257 Diamond
+Harga : 56.700
+order : wa.me/12816245470`
+
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+break
+case '344dm':
+          
+  ptod = "12816245470@s.whatsapp.net"
+  stod = `${sender}`
+  uwu = '*``*'
+  yoii = '```'
+ stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
+  stst = stst.status == 401 ? '' : stst.status
+num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+ menu = `ramadhankukuh.shop
+
+Item : 344 Diamond
+Harga : 75.600
+order : wa.me/12816245470`
+
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+break
+case 'diamondff':
+  
  listMsg = {
- buttonText: '*ʟɪsᴛ ᴅɪᴀᴍᴏɴᴅ ᴍʟ*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, Silahkan pilih menu disini`,
+ buttonText: 'PILIH NOMINAL',
+ footerText: '© KUHXBOT',
+ description: `Hai kak @${sender.split('@')[0]}, List Diamond *FREE FIRE* Disini`,
  sections: [
                      {
                       "title": `${jam} - ${week} ${weton} - ${date}`,
  rows: [
                           {
-                              "title": "3ᴅɪᴀᴍᴏɴᴅ",
+                              "title": "70dm",
                               "rowId": ""
                            },
                           {
                           
-                              "title": "5ᴅɪᴀᴍᴏɴᴅ",
+                              "title": "100dm",
                               "rowId": ""
                            },
                            {
-                              "title": "11ᴅɪᴀᴍᴏɴᴅ",
+                              "title": "140dm",
                               "rowId": ""
                            },
                            {
-                           
-                              "title": "17ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                          
-                              "title": "25ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "40ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                           
-                              "title": "53ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-
-                              "title": "77ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                           
-                              "title": "154ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "217ᴅɪᴀᴍᴏɴᴅ",
+                              "title": "160dm",
                               "rowId": ""
                            }
                         ]
@@ -3203,841 +3077,69 @@ break
 }
 ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
 break
-       case '3ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+             case '70dm':
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 3 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 1.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
+       menu = `ramadhankukuh.shop
+Item : 70 Diamond
+Harga : 10.000
+order : wa.me/12816245470`
 
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
-       case '5ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+             case '100dm':
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 5 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 1.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
+       menu = `ramadhankukuh.shop
+Item : 100 Diamond
+Harga : 14.500
+order : wa.me/12816245470`
 
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOR'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
-       case '11ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+              case '140dm':
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 11 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 3.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
+       menu = `ramadhankukuh.shop
+Item : 140 Diamond
+Harga : 19.000
+order : wa.me/12816245470`
 
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
-       case '17ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
+              case '160dm':
+          
+        ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
        stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 17 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 5.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
+       menu = `ramadhankukuh.shop
+Item : 160 Diamond
+Harga : 22.000
+order : wa.me/12816245470`
 
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '25ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 25 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 8.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '40ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 40 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 12.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '53ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 53 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 16.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '77ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 77 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 24.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '154ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 154 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 48.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case '217ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 217 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 71.500
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'sᴍᴛᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-*ʟɪsᴛ sᴍᴛᴘ〆⁩*
-1 ᴍɪɴɢɢᴜ : 25.000
-2 ᴍɪɴɢɢᴜ : 50.000
-3 ᴍɪɴɢɢᴜ : 75.000
-sᴍᴛᴘ ᴜɴʟɪ : 90.000
-
-[ ᴘᴀʏᴍᴇɴᴛ ]
-ᴅᴀɴᴀ
-ɢᴏᴘᴀʏ
-ᴘᴜʟsᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`ᴘᴀʏᴍᴇɴ`,buttonText:{displayText:'ᴘᴀʏᴍᴇɴᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ᴡʜᴍ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-*ʟɪsᴛ ᴡʜᴍ〆⁩*
-ᴡʜᴍ ᴍɪɴᴋ : 30.000
-ᴡʜᴍ ᴍᴇᴅɪᴜᴍ :45.000
-ᴡʜᴍ ᴇxᴛʀᴀ : 50.000
-ᴡʜᴍ sᴜᴘᴇʀ : 65.000
-
-[ ᴘᴀʏᴍᴇɴᴛ ]
-ᴅᴀɴᴀ
-ɢᴏᴘᴀʏ
-ᴘᴜʟsᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`ᴘᴀʏᴍᴇɴ`,buttonText:{displayText:'ᴘᴀʏᴍᴇɴᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-      case 'ᴍᴡʜᴍ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-*ʟɪsᴛ ᴍᴡʜᴍ〆⁩*
-ᴍᴡʜᴍ ᴍɪɴɪ : 80.000
-ᴍᴡʜᴍ ᴍᴇᴅɪᴜᴍ : 100.000
-ᴍᴡʜᴍ ᴇxᴛʀᴀ : 130.000
-ᴍᴡʜᴍ sᴜᴘᴇʀ : 150.000
-
-[ ᴘᴀʏᴍᴇɴᴛ ]
-ᴅᴀɴᴀ
-ɢᴏᴘᴀʏ
-ᴘᴜʟsᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`ᴘᴀʏᴍᴇɴ`,buttonText:{displayText:'ᴘᴀʏᴍᴇɴᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ᴠᴘs':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-*ʟɪsᴛ ᴠᴘs ᴅɪɢɪᴛᴀʟ ᴏᴄᴇᴀɴ〆⁩*
-ʀᴀᴍ 1 : 15.000
-ʀᴀᴍ 2 : 30.000
-ʀᴀᴍ 4 : 45.000
-ʀᴀᴍ 8 : 60.000
-
-[ ᴘᴀʏᴍᴇɴᴛ ]
-ᴅᴀɴᴀ
-ɢᴏᴘᴀʏ
-ᴘᴜʟsᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ'},type:1},{buttonId:`owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ〆⁩'},type:1},{buttonId:`ᴘᴀʏᴍᴇɴ`,buttonText:{displayText:'ᴘᴀʏᴍᴇɴᴛ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ᴘᴀʏᴍᴇɴ': 
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-sɪʟᴀʜᴋɴ ᴘɪʟɪʜ ᴘᴀʏᴍᴇɴᴛ ɴʏᴀ`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ɢᴏᴘᴀʏ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɢᴏᴘᴀʏ : 081545463585`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ᴅᴀɴᴀ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ᴅᴀɴᴀ : 0895328066012`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-       case 'ᴘᴜʟsᴀ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ᴘᴜʟsᴀ : 089518363262`
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`.menu`,buttonText:{displayText:'ʙᴀᴄᴋ ᴛᴏ ᴍᴇɴᴜ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-case 'ᴅɪᴀᴍᴏɴᴅғғ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
- listMsg = {
- buttonText: '*ʟɪsᴛ ᴅɪᴀᴍᴏɴᴅ ғғ*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, ʟɪsᴛ ᴅɪᴀᴍᴏɴᴅ ғʀᴇᴇ ᴅɪʀᴇ ᴅɪsɪɴɪ`,
- sections: [
-                     {
-                      "title": `${jam} - ${week} ${weton} - ${date}`,
- rows: [
-                          {
-                              "title": "5ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                          {
-                          
-                              "title": "12ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "50ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "70ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "140ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "355ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                          
-                           },
-                           {
-                           
-                              "title": "720ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           
-                           },
-                           {
-                              "title": "1450ᴅɪᴀᴍᴏɴᴅ",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
-break
-             case '5ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 5 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 1.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-             case '12ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 12 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 2.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '50ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 50 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 8.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '70ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 70 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 10.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '140ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 140 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 20.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '355ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 355 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 50.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '720ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 720 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 100.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '1450ᴅɪᴀᴍᴏɴᴅ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 1450 ᴅɪᴀᴍᴏɴᴅ
-ʜᴀʀɢᴀ : 200.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case 'ᴄᴏᴅ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
- listMsg = {
- buttonText: '*ʟɪsᴛ ᴄᴘ ᴄᴏᴅ*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, ʟɪsᴛ ᴅɪᴀᴍᴏɴᴅ ᴄᴘ ᴄᴏᴅ ᴅɪsɪɴɪ`,
- sections: [
-                     {
-                      "title": `${jam} - ${week} ${weton} - ${date}`,
- rows: [
-                          {
-                              "title": "31ᴄᴘ",
-                              "rowId": ""
-                           },
-                          {
-                          
-                              "title": "62ᴄᴘ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "127ᴄᴘ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "317ᴄᴘ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "634ᴄᴘ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "1373ᴄᴘ",
-                              "rowId": ""
-                          
-                           },
-                           {
-                           
-                              "title": "2059ᴄᴘ",
-                              "rowId": ""
-                           
-                           },
-                           {
-                              "title": "3564ᴄᴘ",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
-break
-             case '31ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 31ᴄᴘ
-ʜᴀʀɢᴀ : 5.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '62ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 62ᴄᴘ
-ʜᴀʀɢᴀ : 10.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '127ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 127ᴄᴘ
-ʜᴀʀɢᴀ : 20.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '317ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 317ᴄᴘ
-ʜᴀʀɢᴀ : 50.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '634ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 634ᴄᴘ
-ʜᴀʀɢᴀ : 100.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '1373ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 1373ᴄᴘ
-ʜᴀʀɢᴀ : 200.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '2059ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 2059ᴄᴘ
-ʜᴀʀɢᴀ : 300.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '3564ᴄᴘ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 3564ᴄᴘ
-ʜᴀʀɢᴀ : 500.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case 'ᴅᴏᴍɪɴᴏ':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
- listMsg = {
- buttonText: '*ʟɪsᴛ ᴅᴏᴍɪɴᴏ*',
- footerText: '©ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
- description: `Hai kak @${sender.split('@')[0]}, ʟɪsᴛ ʜɪɢs ᴅᴏᴍɪɴᴏ ᴅɪsɪɴɪ`,
- sections: [
-                     {
-                      "title": `${jam} - ${week} ${weton} - ${date}`,
- rows: [
-                          {
-                              "title": "30ᴍᴋᴏɪɴ",
-                              "rowId": ""
-                           },
-                          {
-                          
-                              "title": "60ᴍᴋᴏɪɴ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "100ᴍᴋᴏɪɴ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "200ᴍᴋᴏɪɴ",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "400ᴍᴋᴏɪɴ",
-                              "rowId": ""
-                          
-                           },
-                           {
-                           
-                              "title": "2ʙᴋᴏɪɴ",
-                              "rowId": ""
-                           
-                           },
-                           {
-                              "title": "4ʙᴋᴏɪɴ",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-ronove.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:fdoc})
-break
-              case '30ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 30ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 5.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '60ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 60ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 10.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '100ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 100ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 100.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '200ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 200ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 30.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '400ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 400ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 60.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '400ᴍᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 400ᴍ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 60.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-             case '2ʙᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 2ʙ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 250.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
-break
-              case '4ʙᴋᴏɪɴ':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
-        ptod = "6281545463585@s.whatsapp.net"
-        stod = `${sender}`
-        uwu = '*``*'
-        yoii = '```'
-       stst = await ronove.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `ᴅɪᴅɪɴsʜᴏᴘ〆⁩
-ɪᴛᴇᴍ : 4ʙ ᴋᴏɪɴ ᴇᴍᴀs
-ʜᴀʀɢᴀ : 500.000
-ᴘᴀʏᴍᴇɴᴛ : sɪʟᴀʜᴋɴ ᴅɪ ᴘɪʟɪʜ ᴍᴇᴛᴏᴅᴇ ᴘᴇᴍʙᴀʏᴀʀᴀɴ ᴀɴᴅᴀ.`
-
-sendButLocation(from, `${menu}`, `${yoii}Created By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`.ɢᴏᴘᴀʏ`,buttonText:{displayText:'ɢᴏᴘᴀʏ〆⁩'},type:1},{buttonId:`ᴅᴀɴᴀ`,buttonText:{displayText:'ᴅᴀɴᴀ〆⁩'},type:1},{buttonId:`ᴘᴜʟsᴀ`,buttonText:{displayText:'ᴘᴜʟsᴀ〆⁩'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`, `${yoii}ramadhankukuh.shop⁩${yoii}`, {jpegThumbnail:iye}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU⁩'},type:1},{buttonId:`infobot`,buttonText:{displayText:'INFO BOT⁩'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 break
               case 'jadian':
               jds = []
@@ -4065,14 +3167,13 @@ break
     case 'sakura':
     case 'tsunade':
     case 'gojosatoru':
-    if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+
         sticWait(from)
         anu = await fetchJson(`https://bx-hunter.herokuapp.com/api/pinterest?text=${command}&apikey=Ikyy69`, {method: 'get'})
         ngebuff = await getBuffer(anu.image)
         ronove.sendMessage(from, ngebuff, image, { quoted: floc })
         break
 case 'attp':  
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
                      if (args.length < 1) return reply('Kasih teks lah om')
                      sticWait(from)
                      ini = args.join(' ')
@@ -4082,13 +3183,12 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 case 'script':
 		case 'sc':
 		case 'sourcecode':
-		if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 		ronove.sendMessage(from, { text: "BELI LAH SAMA OWNERKU AWOKAWOKAWOK", matchedText: 'nopee', description: "", title: "Ngapain Om?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
       case "setcmd":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (isQuotedSticker) {
           if (!q)
             return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`);
@@ -4320,7 +3420,7 @@ teks += 'Nama Group : ' + met.subject + '\n\n'
 reply(teks)
 break
       case "antilink":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!isGroup) return reply("Khusus di grup");
         if (!isGroupAdmins && !mek.key.fromMe) return sticAdmin(from)
         if (args[0] == "on") {
@@ -4343,14 +3443,14 @@ break
             {
               buttonId: `antilink on`,
               buttonText: {
-                displayText: `on`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: `antilink off`,
               buttonText: {
-                displayText: `off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4358,7 +3458,7 @@ break
         }
         break;
       case "antihidetag":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!isGroup) return reply("Khusus di grup");
         if (!isGroupAdmins && !mek.key.fromMe) return sticAdmin(from)
         if (args[0] == "on") {
@@ -4385,14 +3485,14 @@ break
               {
                 buttonId: `${prefix}antihidetag on`,
                 buttonText: {
-                  displayText: `on`,
+                  displayText: `ON`,
                 },
                 type: 1,
               },
               {
                 buttonId: `${prefix}antihidetag off`,
                 buttonText: {
-                  displayText: `off`,
+                  displayText: `OFF`,
                 },
                 type: 1,
               },
@@ -4401,7 +3501,7 @@ break
         }
         break;
       case "antiviewonce":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!isGroup) return reply("Khusus di grup");
         if (!isGroupAdmins && !mek.key.fromMe) return sticAdmin(from)
         if (args[0] == "on") {
@@ -4422,14 +3522,14 @@ break
               {
                 buttonId: `${prefix}antiviewonce on`,
                 buttonText: {
-                  displayText: `on`,
+                  displayText: `ON`,
                 },
                 type: 1,
               },
               {
                 buttonId: `${prefix}antiviewonce off`,
                 buttonText: {
-                  displayText: `off`,
+                  displayText: `OFF`,
                 },
                 type: 1,
               },
@@ -4530,14 +3630,14 @@ break
             {
               buttonId: `${prefix}autojoin on`,
               buttonText: {
-                displayText: `on`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: `${prefix}autojoin off`,
               buttonText: {
-                displayText: `off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4545,7 +3645,7 @@ break
         }
         break;
       case "antivirtex":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!isGroup) return reply("Khusus di grup");
         if (!isGroupAdmins && !mek.key.fromMe) return sticAdmin(from)
         if (args[0] == "on") {
@@ -4565,14 +3665,14 @@ break
             {
               buttonId: `${prefix}antivirtex on`,
               buttonText: {
-                displayText: `on`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: `${prefix}antivirtex off`,
               buttonText: {
-                displayText: `off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4602,14 +3702,14 @@ break
             {
               buttonId: `${prefix}kickarea on`,
               buttonText: {
-                displayText: `on`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: `${prefix}kickarea off`,
               buttonText: {
-                displayText: `off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4619,7 +3719,7 @@ break
 
       //------------------< Fitur Grup >-------------------
       case "listonline": //copas dari stikerinbot
-    if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})  
+  
   let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat;
         try {
           let online = [
@@ -4642,7 +3742,7 @@ break
         break;
      
            case 'wangy':
-                 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+            
               if (!q) return reply ('NAMANYA SAPA BRO')
               name = args[0]
               wangy = `${name} ${name} ${name} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaaah baunya rambut ${name} wangyy aku mau nyiumin aroma wangynya ${name} AAAAAAAAH ~ Rambutnya.... aaah rambutnya juga pengen aku elus-elus ~~ AAAAAH ${name} keluar pertama kali di anime juga manis ❤️ ❤️ ❤️ banget AAAAAAAAH ${name} AAAAA LUCCUUUUUUUUUUUUUUU............ ${name} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️apa ? ${name} itu gak nyata ? Cuma HALU katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK PEDULI BANGSAAAAAT !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK PEDULI. ❤️ ❤️ ❤️ ${name} gw ... ${name} di laptop ngeliatin gw, ${name} .. kamu percaya sama aku ? aaaaaaaaaaah syukur ${q} aku gak mau merelakan ${name} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH GUA MASIH PUNYA ${name} SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAAH`
@@ -4682,7 +3782,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         });
         break;
       case "q":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!m.quoted) return reply("reply message!");
         let qse = ronove.serializeM(await m.getQuotedObj());
         if (!qse.quoted)
@@ -4712,7 +3812,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         }
         break;
       case "add":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!isGroup) return reply(mess.only.group);
         if (!isGroupAdmins && !mek.key.fromMe) return sticAdmin(from)
         if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -4730,7 +3830,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         }
         break;
       case "getbio":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         var yy = mek.message.extendedTextMessage.contextInfo.participant;
         var p = await ronove.getStatus(`${yy}`, MessageType.text);
         reply(p.status);
@@ -4740,7 +3840,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         break;
       // Get Name
       case "getname":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         var ambl = mek.message.extendedTextMessage.contextInfo.participant;
         const sname =
           ronove.contacts[ambl] != undefined
@@ -4749,7 +3849,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         reply(sname);
         break;
       case "setdesc":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isBotGroupAdmins) return sticNotAdmin(from)
         if (!isGroup) return;
@@ -4760,7 +3860,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         break;
       // Set Name Group
       case "setname":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isBotGroupAdmins) return sticNotAdmin(from)
         if (!isGroup) return;
@@ -4771,7 +3871,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         break;
       // Group Info
       case "groupinfo":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!isGroup) return;
         ppUrl = await ronove.getProfilePicture(from); // leave empty to get your own
         buffergbl = await getBuffer(ppUrl);
@@ -4782,7 +3882,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         break;
       // Demote Admins
       case "demote":
-         if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+    
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -4801,7 +3901,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         break;
       // Promote Members
       case "promote":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Admin Group Only");
         if (!isGroup) return;
         if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -4819,7 +3919,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         });
         break;
       case "closegc":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Only admin");
         if (!isBotGroupAdmins) return sticNotAdmin(from)
         if (!isGroup) return;
@@ -4827,7 +3927,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} tersisa` : ""}
         ronove.groupSettingChange(from, GroupSettingChange.messageSend, true);
         break; 
 case 'tospam':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (!isQuotedSticker && !isQuotedAudio && !isQuotedImage && budy.length > 10) {
 teks = body.slice(8)
 oi1 = teks.split('|')[0]
@@ -4876,7 +3976,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
 }
 	  break
       case "revoke":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Only admin");
         if (!isBotGroupAdmins) return sticNotAdmin(from)
         if (!isGroup) return;
@@ -4884,7 +3984,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
         reply("```Succes revoke link group```");
         break;
       case "opengc":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe && !isGroupAdmins) return reply("Only admin");
         if (!isBotGroupAdmins) return sticNotAdmin(from)
         if (!isGroup) return;
@@ -4892,7 +3992,7 @@ if (Number(oi2) >= 50) return reply('Kebanyakan!')
         ronove.groupSettingChange(from, GroupSettingChange.messageSend, false);
         break;
       case "reminder": // by Slavyan
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!q)
           return reply(
             `CONTOH PENGGUNANNYA:\n${prefix}reminder text/2s\n\nNOTE: \n*s* - seconds\n*m* - minutes\n*h* - hours\n*d* - days`
@@ -5094,7 +4194,7 @@ Reminder berhasil diaktifkan!
         }
         break;
 case 'hacked':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
   if (!mek.key.fromMe) return;
               if (!isGroup) return reply(mess.only.group)
               if (args.length < 1) return reply('Teksnya?')
@@ -5108,11 +4208,11 @@ case 'hacked':
                 await sleep(1000)
                 ronove.sendMessage(from, 'Succes Hacked', text, {quoted: fyt})
 case 'mygithub':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
   reply('https://github.com/didinxd')
 					break;
         case 'suit':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
    try {
      const text = args.join(' ')
      if (!text) return reply(`Pilihan yang tersedia\n\ngunting, kertas, batu\n\n${prefix}suit gunting\n\nkasih spasi!`)
@@ -5155,7 +4255,7 @@ case 'mygithub':
    }
    break
         case 'tts':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         sticWait(from)
 
 					 if (args.length == 0) return reply(`Example: ${prefix + command} id|hai`)
@@ -5170,7 +4270,7 @@ case 'mygithub':
 
 					break
         case 'slot':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
             const somtoy = sotoy[Math.floor(Math.random() * sotoy.length)]
             const somtoy2 = sotoy1[Math.floor(Math.random() * sotoy1.length)]
             const somtoy3 = sotoy2[Math.floor(Math.random() * sotoy2.length)]
@@ -5185,7 +4285,7 @@ Keterangan : Jika anda Mendapatkan 3Buah Sama Berarti Kamu Win
 Contoh : ${somtoy4}<=====`, text, { quoted: mek })
             break
         				    case 'tembak':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
                     if (args[0] == 'udara') {
                     setTimeout( () => {
                     reply(`[ *PERINTAH DILAKSANAKAN* ]`)
@@ -5230,21 +4330,21 @@ Contoh : ${somtoy4}<=====`, text, { quoted: mek })
                     }
                     break
         case 'truth':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
                 const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
 		const ttrth = trut[Math.floor(Math.random() * trut.length)]
 		truteh = await getBuffer(`https://i.ibb.co/0yLmMkB/20210329-102215.jpg`)
 		ronove.sendMessage(from, truteh, image, { caption: '*TRUTH*\n\n'+ ttrth, quoted: fgif })
 		break
         		case 'dare':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
 		const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "ðŸ¦„??" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " gw wibu sejati " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 		const der = dare[Math.floor(Math.random() * dare.length)]
 		tod = await getBuffer(`https://i.ibb.co/BypfSsH/20210329-103035.jpg`)
 		ronove.sendMessage(from, tod, image, { quoted: ftrol, caption: '*DARE*\n\n'+ der })
 		break
         case 'caklontong':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
 					anu = await fetchJson(`https://velgrynd.herokuapp.com/api/caklontong`, {method: 'get'})
 					get = `*${anu.result.soal}*`
 					setTimeout( () => {
@@ -5477,17 +4577,17 @@ case 'tebakjenaka':
 					}, 0) // 1000 = 1s,
 					break
    case 'pokemon':
-         if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+    
       sticWait(from)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/pokemon?apikey=Ikyy69`, `Ni Kak Lucu Kan :]`)
 					break
          case 'ss':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
       sticWait(from)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`, `Ni Kak`)
 					break
 case 'harta':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
   sticWait(from)
   sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/chartatahta?text=${args[0]}&apikey=${HunterApi}`, `Ni 🗿`)
   break
@@ -5570,7 +4670,7 @@ case 'ghea':
         ]);                 
                     break    
                 case 'mangadl':
-                      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+                  
         if (args.length < 1) return reply(`Example : ${prefix + command} naruto`)
      ini_result = await fetchJson(`https://ronove-bot-api.herokuapp.com/api/manga?search=${args[0]}&apikey=Alphabot`,{method:'get'})
      get_result =  `Title: ${ini_result.result.title}
@@ -5586,7 +4686,7 @@ anonee = await getBuffer(`https://api.xteam.xyz/tahta?text=${q}&APIKEY=${xteamke
 ronove.sendMessage(from, anonee, image, {quoted:nikak})
 break
          case 'infotsunami':
-               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
      ini_result = await fetchJson('https://ronove-bot-api.herokuapp.com/api/infogempa?apikey=Alphabot')
      get_result = ini_result.result
         ini_txt = `INFO TSUNAMI TERKINI
@@ -5600,7 +4700,7 @@ break
      reply (ini_txt)
      break
         case 'infogempa':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+          
      ini_result = await fetchJson('https://ronove-bot-api.herokuapp.com/api/infogempa?apikey=Alphabot')
      get_result = ini_result.result
         ini_txt = `INFO GEMPA TERKINI
@@ -5615,7 +4715,7 @@ break
      reply (ini_txt)
      break
 case 'size':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (args.length < 1) return reply('Masukan angkanya')
 filsize = args[0]
 costick = await ronove.prepareMessageFromContent(from,{
@@ -5637,7 +4737,7 @@ ronove.relayWAMessage(costick)
 break
 
 case 'sizeimg':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 if (args.length < 1) return reply('Masukan angkanya')
 filsizei = args[0]
 costick3 = await ronove.prepareMessageFromContent(from,{
@@ -5675,7 +4775,7 @@ break
       //------------------< Fitur yg pake button >-------------------
       
 	case 'chat':
-	      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+	  
 			if (args[0].startsWith('08')) return reply('Awali nomor dengan 62')
             if (args[0].startsWith('+62')) return reply('Awali nomor dengan 62')
 			if (args.length < 1) return reply(`Penggunaan ${prefix}chat 62xnxx|teks`)
@@ -5686,7 +4786,7 @@ break
             reply(`Sukses mengirim chat:\n${org},@${nomor}`)
             break
 case 'viewonce':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 res = await ronove.prepareMessageFromContent(from,{
 "viewOnceMessage": {
 "message": {
@@ -5701,7 +4801,7 @@ res = await ronove.prepareMessageFromContent(from,{
 ronove.relayWAMessage(res)
 break
 case 'hbd': case 'zodiak': case 'zodiac':
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
 let textus = args.join(" ")
 if (!q) return reply(`Example : ${prefix + command} 2003 01 24`)
 const zodiak = [
@@ -5821,10 +4921,10 @@ break
               "title": `${ucapanWaktu} kak ${pushname}\n ini adalah bot Gw:v`,
               "description": `bot ini berjalan selama \n${runtime(process.uptime())}`,
               "buttonText": "click here👈",
-              /*"footerText": '@ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
+              /*"footerText": '@© KUHXBOT⁩',
               "listType": "SINGLE_SELECT",
               "sections": [{
-              "footerText": '@ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩',
+              "footerText": '@© KUHXBOT⁩',
                 "title": `Prefix Bot :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`,
                 "rows": [{
                     "title": "+62",
@@ -5940,7 +5040,7 @@ case "asupan3": // by itsmevall
         ]);
         break;
       case "grup":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!mek.key.fromMe) return;
         sendButMessage(from, `GROUP SETTING`, `Silahkan pilih salah satu`, [
           {
@@ -5986,7 +5086,7 @@ ronove.sendMessage(from, anokak, image, {quoted: mek, thumbnail: fs.readFileSync
       //------------------< Fitur downloader >-------------------
       case "tiktok":
       case "tiktoknowm":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
                 if (!isUrl(args[0]) && !args[0].includes("tiktok.com"))
           return reply('Url harus vt.tiktok.com!!!');
 sticWait(from)
@@ -6020,7 +5120,7 @@ if (!isGroup) return reply(mess.only.group)
               let userXpp = level.getLevelingXp(sender, _level)
               let requiredXpp = 10 * Math.pow(userLevell, 2) + 50 * userLevell + 100
               let userRankk = level.getUserRank(sender, _level)
-              ptod = "6281545463585@s.whatsapp.net"
+              ptod = "12816245470@s.whatsapp.net"
         stod = `${sender}`
         uwu = '*``*'
         yoii = '```'
@@ -6041,7 +5141,7 @@ case 'mining':
               if (!isLevelingOn) return await reply('Fitur leveling belum diaktifkan!') 
               const resp = _level
             _level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
-              let leaderboard =  `-----[ *LEADERBOARD* ]----\n\n➸ ∞1. wa.me/6281545463585
+              let leaderboard =  `-----[ *LEADERBOARD* ]----\n\n➸ ∞1. wa.me/12816245470
 ➸ *Xp :* ∞
 ➸ *Level :* ∞
 ➸ *Role :* God\n\n`
@@ -6100,7 +5200,7 @@ case 'mining':
               break
 //------------------< Enable/Disable >-------------------
        case 'leveling':
-       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
               if (!isGroup) return reply(mess.only.group)
               if (args[0] === 'enable') {
               if (isLevelingOn) return reply('Fitur leveling telah diaktifkan sebelumnya.')
@@ -6118,7 +5218,7 @@ case 'mining':
               break
       //JCCHCCGHTHDTRSRS
       case "twitter":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!isUrl(args[0]) && !args[0].includes("twitter.com"))
           return reply(mess.Iv);
         if (!q) return fakegroup("Linknya?");
@@ -6128,7 +5228,7 @@ case 'mining':
         sendMediaURL(from, ren, "DONE");
         break;
       case "facebook":  
-    if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+
         if (!q) return reply("Linknya?");
         if (!isUrl(args[0]) && !args[0].includes("facebook.com"))
           return reply(mess.Iv);
@@ -6140,7 +5240,7 @@ case 'mining':
         });
         break;
       case "instagram":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         if (!isUrl(args[0]) && !args[0].includes("instagram.com"))
           return reply(mess.Iv);
         if (!q) return fakegroup("Linknya?");
@@ -6164,7 +5264,7 @@ case 'mining':
         });
         break;
       case "tiktokdl":
-            if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+        
         var gh = args.join("");
         var link = gh.split("|")[0];
         var tipe = gh.split("|")[1];
@@ -6236,7 +5336,7 @@ case 'setprefix':
         }
         break;
       case "linkwa":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!q) return reply("cari group apa?");
         hx.linkwa(q).then((result) => {
           let res = "*「 _LINK WA_ 」*\n\n";
@@ -6264,7 +5364,7 @@ case 'setprefix':
         break;*/
       
       case "tiktokstalk":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!q) return reply("Usernamenya? ");
         var i = await fetchJson(
           `https://api.dhnjing.xyz/stalk/tiktok?user=@${q}`
@@ -6281,7 +5381,7 @@ case 'setprefix':
         ronove.sendMessage(from, buff, image, { quoted: mek, caption: ii });
         break;
       case "igstory":
-      if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
+  
         if (!q) return reply("Usernamenya?");
         hx.igstory(q).then(async (result) => {
           for (let i of result.medias) {
@@ -6303,7 +5403,6 @@ case 'setprefix':
         break;
 
   case 'nulis': case 'nulisbuku':            
-  if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
             if (args.length == 0) return reply(`contoh: ${prefix + command} Vall`)
             sticWait(from)
             teks = args.join(" ")
@@ -6336,7 +5435,7 @@ ${body.slice(4)}
 ${readmore}
 「All chat broadcast」`,
 
-			"footerText": '*「 DIDINBOT☕ 」*',
+			"footerText": '*「 KUHXBOT☕ 」*',
 
 			"buttons": [
 
@@ -6370,7 +5469,7 @@ ${readmore}
 ${readmore}
 「All chat broadcast」`,
 
-			"footerText": '*「 DIDINBOT☕ 」*',
+			"footerText": '*「 KUHXBOT☕ 」*',
 
 			"buttons": [
 
@@ -6404,7 +5503,7 @@ ${readmore}
 ${readmore}
 「All chat broadcast」`,
 
-			"footerText": '*「 DIDINBOT☕ 」*',
+			"footerText": '*「 KUHXBOT☕ 」*',
 
 			"buttons": [
 
@@ -6434,7 +5533,7 @@ ronove.sendMessage(_.jid,
 ${readmore}
 「All chat broadcast」`,
 
-			"footerText": '*「 DIDINBOT☕ 」*',
+			"footerText": '*「 KUHXBOT☕ 」*',
 
 			"buttons": [
 
@@ -6465,7 +5564,6 @@ anu = await getBuffer(kon)
 ronove.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'anal':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6474,7 +5572,6 @@ kon = await getBuffer(aku)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'lesbian':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6483,7 +5580,6 @@ kon = await getBuffer(kau)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'eroneko':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6492,7 +5588,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'bj':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6501,7 +5596,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'kitsune':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6510,7 +5604,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'pussy':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6571,7 +5664,6 @@ case 'doge':
 )
               break
 case 'wallpaper':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6580,7 +5672,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'neko2':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6589,7 +5680,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'baka':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6598,7 +5688,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'slap':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6607,7 +5696,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'poke':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6616,7 +5704,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'keta':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6625,7 +5712,6 @@ kon = await getBuffer(hai)
 ronove.sendMessage(from, kon, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case  'awoo':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6634,7 +5720,6 @@ buffer = await getBuffer(anu.url)
 ronove.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case  'blowjob':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6643,7 +5728,6 @@ buffer = await getBuffer(anu.url)
 ronove.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case  'hentai': 
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6659,7 +5743,6 @@ ronove.relayWAMessage(prep)
 fs.unlinkSync(`./${sender}.jpeg`)
 break
 case  'megumin':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6668,7 +5751,6 @@ buffer = await getBuffer(anu.url)
 ronove.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case  'neko':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6676,45 +5758,7 @@ anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
 buffer = await getBuffer(anu.url)
 ronove.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
-case 'verify':
-              
-if (isRegistered) return reply('Akun kamu sudah terverfikasi')
-const serialUser = createSerial(18)
-	         try {
-								ppimg = await ronove.getProfilePicture(`${sender.split('@')[0]}@c.us`)
-								} catch {
-								ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-							}
-	        veri = sender
-	        _registered.push(sender)
-	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
-	        addRegisteredUser(sender, serialUser)
-	         const anuu = `「 ᴘᴇɴᴅᴀғᴛᴀʀᴀɴ ᴜsᴇʀ 」
-*Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*
-
-*🌹 Nama :* ${pushname}
-*🌹 API :* +${sender.split('@')[0]}
-*🌹 Serial:* ${serialUser}
-*🌹 Total:* ${_registered.length} Pengguna
-
-*「 DIDINBOT☕ 」*
-`
-         haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
-             buttons = [{buttonId: `${prefix}menu`,buttonText:{displayText: `〆⁩MENU`},type:1}]
-              imageMsg = (await ronove.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'Created by ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩︎', imageMessage: imageMsg,
-              contentText:`${anuu}`,buttons,headerType:4}
-              prep = await ronove.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
-              ronove.relayWAMessage(prep)
-	         console.log(color('[REGISTER]'), color(time, 'yellow'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
-	    // console.log(e)
-            setTimeout( () => {
-			ronove.updatePresence(from, Presence.composing)
-			reply(`*Terimakasih Telah Terdaftar Di DIDINBOT*`)
-		}, 2000)
-        break
 case  'trapnime':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!isGroup) return reply(mess.only.group)
 if (!isNsfw) return reply(`Fitur Nsfw Belum Aktif Di Grup Ini\nKetik: ${prefix}nsfw 1 \nUntuk Mengaktifkan`)
 sticWait(from)
@@ -6724,7 +5768,6 @@ ronove.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSyn
 break
 //Done
 case 'nuliskiri':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Textnya mana gan?')
 sticWait(from)
 kon = (`https://hardianto-chan.herokuapp.com/api/nuliskiri?text=${c}&apikey=${hardi}`)
@@ -6732,7 +5775,6 @@ anu = await getBuffer(kon)
 ronove.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'nuliskanan':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Textnya mana gan?')
 sticWait(from)
 kon = (`https://hardianto-chan.herokuapp.com/api/nuliskanan?text=${c}&apikey=${hardi}`)
@@ -6740,7 +5782,6 @@ anu = await getBuffer(kon)
 ronove.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'foliokanan':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Textnya mana gan?')
 sticWait(from)
 kon = (`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
@@ -6748,7 +5789,6 @@ anu = await getBuffer(kon)
 ronove.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'xs':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Nyari Apa?')
 pepex = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideosearch?query=${c}&apikey=${HunterApi}`)
 sticWait(from)
@@ -6765,7 +5805,6 @@ ronove.sendMessage(from, anu, text, {quoted: mek})
 break
 case 'xvideo':
 case 'xv':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Linknya?')
 x = await fetchJson(`https://bx-hunter.herokuapp.com/api/xvideodetail?url=${c}&apikey=${HunterApi}`)
 sticWait(from)
@@ -6773,7 +5812,6 @@ vid = await getBuffer(x.result.files.low)
 ronove.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'foliokiri':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 if (!c) return reply('Textnya mana gan?')
 sticWait(from)
 kon = (`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=${hardi}`)
@@ -6781,7 +5819,6 @@ anu = await getBuffer(kon)
 ronove.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./ronove.jpg')})
 break
 case 'nsfw':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fgif})
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}nsfw 1`)
@@ -7660,8 +6697,8 @@ break
           .message.extendedTextMessage.contextInfo;
         media = await ronove.downloadAndSaveMediaMessage(encmedia);
         anu = args.join(" ").split("|");
-        satu = anu[0] !== "" ? anu[0] : `DIDINBOT`;
-        dua = typeof anu[1] !== "undefined" ? anu[1] : `BY ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩~`;
+        satu = anu[0] !== "" ? anu[0] : `KUHXBOT`;
+        dua = typeof anu[1] !== "undefined" ? anu[1] : `BY © KUHXBOT⁩~`;
         require("./lib/fetcher.js").createExif(satu, dua);
         require("./lib/fetcher.js").modStick(media, ronove, mek, from);
         break;
@@ -8355,7 +7392,7 @@ case 'bokep1':
           "productId": "6514805468560342",
           "jpegThumbnail": iye
         },
-        "businessOwnerJid": '6281545463585@s.whatsapp.net'
+        "businessOwnerJid": '12816245470@s.whatsapp.net'
       },
       "footerText": `MINAT? PC OWNER, KETIK ${prefix}owner`
     }
@@ -8365,7 +7402,7 @@ break
 case 'katalog':
       list = await ronove.prepareMessageFromContent(from, {
     "listMessage": {
-      "title": "PAYMENT",
+      "title": "order",
       "description": "CLICK",
       "buttonText": "",
       "listType": "PRODUCT_LIST",
@@ -8871,10 +7908,10 @@ if (budy.includes(`assalamualaikum`)) {
 if (budy.includes(`anjing`)) {
                   reply(`santai jamet`)
                   }
-                  if (budy.includes(`didin`)) {
+                  if (budy.includes(`kuh`)) {
                   reply(`Auto respon: Iya kenapa manggil ownerku?`)
                   }
-                  if (budy.includes(`didin`)) {
+                  if (budy.includes(`kukuh`)) {
                   reply(`Auto respon: Iya kenapa manggil ownerku?`)
                   }
 
@@ -8906,8 +7943,8 @@ if (budy.includes(`anjing`)) {
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[DIDINBOT]", "cyan"),
-        "Bot By ᴹᴿ᭄Didin⁴̅⁰͍⁴̵〆⁩",
+        color("[KUHXBOT]", "cyan"),
+        "Bot By © KUHXBOT⁩",
         color(sender.split("@")[0])
       );
     }
